@@ -1,0 +1,46 @@
+{% extends 'base.html'%}
+{% block title %}Prototipo movil{% endblock %}
+
+{% load static %}
+{% block title-head %}
+<h1 class="text-center">Prototipo Movil</h1>
+{% endblock %}
+
+{% block content %}
+
+<!-- Contenido Principal -->
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-7 col-md-8">
+            <h2 class="section-heading text-center">Prototipo Movil</h2>   
+            <p class="text-center">Es una aplicación móvil desarrollada con Flutter que consta con una conexión
+                a una base de datos en la nube NoSQL con los datos del cuidador del canino, 
+                la conexión a sensores para el monitoreo de pulso cardiaco, temperatura. 
+                En el que se resguardarán los datos de monitoreo de manera constante,
+                para llevar un control sobre el canino.</p>
+            <br>
+            <h2 class="section-heading text-center">Interfaces de la aplicación móvil</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-6">
+            <img src="{% static 'img/inicio.jpeg' %}" alt="" class="img-fluid">
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <img src="{% static 'img/iniciarSesion.jpeg' %}" alt="" class="img-fluid">
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <img src="{% static 'img/recuperacionDeContraseña.jpeg' %}" alt="" class="img-fluid">
+        </div>
+        <br>
+        <div class="col-lg-4 col-md-6">
+            <img src="{% static 'img/crearCuenta.jpeg' %}" alt="" class="img-fluid">
+        </div>
+        <br>
+        <div class="col-lg-4 col-md-6">
+            <img src="{% static 'img/datos.jpeg' %}" alt="" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+{% endblock %}

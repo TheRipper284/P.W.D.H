@@ -1,0 +1,228 @@
+Estilos para el cuerpo de la página
+body {
+    font-size: 20px;
+    color: #212529;
+    font-family: Lora,'Times New Roman',serif;
+}
+
+/* Estilos para párrafos */
+p {
+    line-height: 1.5;
+    margin: 0;
+    text-align: left; /* Alineación a la izquierda */
+}
+
+/* Estilos para enlaces dentro de párrafos */
+p a {
+    text-decoration: underline;
+}
+
+/* Estilos para títulos */
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 800;
+    font-family: 'Open Sans','Helvetica Neue', Helvetica,Arial,sans-serif
+}
+
+
+
+/* Estilos para el encabezado de sección */
+.section-heading {
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 20px
+}
+/* Estilos para subtitulos de sección */
+.section-heading2 {
+    font-size: 20px;
+    display: flex;
+    text-decoration: underline;
+}
+
+/* Estilos para el contenedor */
+.container {
+    font-size: 20px;
+    font-style: normal;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+/* Estilos para la barra de navegación principal */
+#mainNav {
+    position: absolute;
+    border-bottom: 5px solid #e9ecef;
+    background-color: #fff;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+/* Estilos para el logotipo de la barra de navegación */
+#mainNav .navbar-brand {
+    font-weight: 800;
+    color: #000000;
+
+}
+
+/* Estilos para el botón de alternar la barra de navegación en dispositivos pequeños */
+#mainNav .navbar-toggler {
+    font-size: 20px;
+    font-weight: bold;
+    font-weight: 800;
+    padding: 13px;
+    text-transform: uppercase;
+    color: #242527;
+
+}
+
+/* Estilos para los elementos de la barra de navegación */
+#mainNav .navbar-nav>li.nav-item>a {
+    font-size: 20px;
+    font-weight: 80;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-right: 0px; /* Espaciado entre las secciones */
+    border-right:  3px solid #111010; /* Línea divisoria entre las secciones */
+    padding-right: 10px; /* Espaciado a la derecha para separar visualmente */
+    line-height: 66px; /* Establece la altura fija para cada elemento de la barra de navegación */
+    font-weight: bold;
+}
+
+/* Estilos para la barra de navegación en dispositivos grandes */
+@media only screen and (min-width: 992px) {
+    #mainNav {
+        border-bottom:1px solid transparent;
+        background: 0 0;
+    }
+
+
+}
+
+/* Estilos para la transición de la barra de navegación en dispositivos grandes */
+@media only screen and (min-width: 992px) {
+    #mainNav {
+        -webkit-transition:background-color .2s;
+        -moz-transition: background-color .2s;
+        transition: background-color .2s;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+
+    #mainNav.is-fixed {
+        position: fixed;
+        top: -67px;
+        -webkit-transition: -webkit-transform .2s;
+        -moz-transition: -moz-transform .2s;
+        transition: transform .2s;
+        border-bottom: 1px solid #fff;
+        background-color: rgba(255,255,255,.9);
+    }
+
+    #mainNav.is-fixed .navbar-brand {
+        color: #212529;
+    }
+
+    #mainNav.is-fixed .navbar-brand:focus,#mainNav.is-fixed .navbar-brand:hover {
+        color: #0085a1;
+    }
+
+    #mainNav.is-fixed .navbar-nav>li.nav-item>a {
+        color: #212529;
+    }
+
+    #mainNav.is-fixed .navbar-nav>li.nav-item>a:focus,#mainNav.is-fixed .navbar-nav>li.nav-item>a:hover {
+        color: #0085a1;
+    }
+
+    #mainNav.is-visible {
+        -webkit-transform: translate3d(0,100%,0);
+        -moz-transform: translate3d(0,100%,0);
+        -ms-transform: translate3d(0,100%,0);
+        -o-transform: translate3d(0,100%,0);
+        transform: translate3d(0,100%,0);
+    }
+}
+
+/* Estilos para el encabezado de la página */
+header.masthead {
+    display: flex; /* Utiliza flexbox para alinear los elementos */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    height: 95vh; /* Establece la altura del encabezado al 100% de la altura de la ventana */
+    background: no-repeat center center;
+    background-color: #faf7f7;
+    background-attachment: scroll;
+    position: sticky;
+    background-position: 55%;
+    background-size: contain;
+    margin-top: 90px; /* Cambia el valor según la cantidad de espacio que desees */
+
+}
+
+/* Estilos para la superposición en el encabezado */
+header.masthead .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: .6;
+}
+
+header.masthead .page-heading, header.masthead .post-heading, header.masthead .site-heading {
+    padding: 90px 0 110px; /* Cambia el valor del primer número para ajustar el espacio superior */
+    color: #faf7f7;
+    display: block;
+    
+}
+
+
+/* Estilos para los subtítulos en los encabezados de la página */
+header.masthead .page-heading .subheading, header.masthead .site-heading .subheading {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.1;
+    display: block;
+    margin: 30px 0 0;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+
+}
+
+
+/* Estilos para los derechos de autor en el pie de página */
+footer .copyright {
+    font-size: 14px; /* Tamaño de fuente */
+    margin-bottom: 0; /* Margen inferior */
+    text-align: center; /* Alineación de texto */
+}
+
+/* Estilos para los botones */
+.btn {
+    font-size: 14px; /* Tamaño de fuente */
+    font-weight: 800; /* Peso de fuente */
+    padding: 15px 25px; /* Relleno */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    text-transform: uppercase; /* Transformación de texto a mayúsculas */
+    border-radius: 0; /* Borde sin bordes redondeados */
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif; /* Fuente */
+}
+
+
+/* Estilos para un título */
+.title {
+    margin-top: 5px!important; /* Margen superior */
+}
+
+/* Estilos para botones grandes */
+.btn-lg {
+    font-size: 16px; /* Tamaño de fuente */
+    padding: 25px 35px; /* Relleno */
+}
+
+img {
+    width: 300px; /* Ancho deseado */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+.img2 {
+    width: 800px; /* Ancho deseado */
+    height: auto; /* Altura automática para mantener la proporción */
+}

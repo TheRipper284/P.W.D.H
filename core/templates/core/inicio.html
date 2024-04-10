@@ -1,0 +1,37 @@
+{% extends 'base.html'%}
+
+{% block title %}DOG-HEALTH{% endblock %}
+
+{% load static %}
+
+{% block img-head %}{% static 'img/inicio.avif'%}{% endblock %}
+
+{% block title-head %}
+<h1>BIENVENIDOS</h1>
+<h1>A</h1>
+<h1>DOG-HEALTH</h1>
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <h2 class="section-heading">Objetivo</h2>
+                    <p>Prevenir enfermedades caninas en razas pequeñas, medianas y grandes, derivadas de anormalidades diagnosticadas y observadas en el monitoreo de signos vitales, tales como pulsaciones cardiacas y temperatura corporal, con ayuda de sensores de pulso y temperatura, logrando así una mejor calidad de vida. Dicho proyecto se realizará en un estimado de 3 meses aproximadamente, de igual manera se probará en canes reales de distintas razas y en diferentes entornos para monitorear la variación de signos vitales.</p>
+
+                    <h2 class="section-heading">Justificación</h2>
+                    <p>A lo largo de los años se han venido desarrollando un sin número de dispositivos para el cuidado de mascotas, sin embargo, se ha analizado que estos aparatos se basan en su mayoría en determinar la ubicación, rastreo o distribuidores de comida. Debido a eso, diseñar un prototipo para monitorear los signos vitales del can a través de
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <br>
+                    sensores de manera que se pueda detectar posibles problemas como temperatura alta o dificultad para respirar sería de gran importancia tanto para el amo como para los veterinarios. 
+                    La mayoría de las personas tienen mascotas, pero no tienen conocimiento de la temperatura correcta que el can debe mantener diariamente al igual que las pulsaciones. Con este prototipo se pretende que el dueño de la mascota tenga un control constante sobre los signos vitales del animal, así mismo, sirva de ayuda para las mascotas que padecen de problemas cardiacos o respiratorios severos que necesitan tener un control diariamente. La importancia de este proyecto radica en implementar un mecanismo fácil y práctico mediante el diseño de un collar, el poder controlar el estado del can teniendo un seguimiento respecto a su salud e informar de manera oportuna en el caso de alguna enfermedad. Por ello, contará con sensores específicos para tener los valores de los signos vitales.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
