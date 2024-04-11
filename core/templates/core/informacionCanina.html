@@ -1,7 +1,10 @@
-{% extends 'base.html'%}
-{% block title %}Informacion Canina{% endblock %}
+{% extends 'base.html' %}
+{% block title %}Información Canina{% endblock %}
 
 {% load static %}
+
+{% block img-head %}{% static 'img/Designer(2).jpeg'%}{% endblock %}
+
 {% block title-head %}
 <h1 class="text-center">Información canina</h1>
 {% endblock %}
@@ -13,10 +16,8 @@
         <div class="col-lg-12">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="text-center mb-5">
-                        <h2 class="section-heading">Prototipo IOT</h2>
-                    </div>
-                    <p>¿POR QUÉ LOS CANES?</p>
+                    <h2>¿POR QUÉ LOS CANES?</h2>
+                    
                     <p>¿Por qué no? Los caninos son más que solo animales. Son seres que merecen ser cuidados con la misma importancia que las personas. Por lo tanto, se realizará el monitoreo de su pulso cardíaco, temperatura en caso de extravío.</p>
                     <br>
                     <p>Según estudios, los humanos no somos los únicos animales que padecen cardiopatías, pues hasta un 10% de los perros también sufren enfermedades cardiovasculares. Manuel Lázaro, clínico de animales de compañía y vocal de la Junta de Gobierno del Colegio Oficial de Veterinarios de Madrid, nos habla de las patologías cardiacas más comunes entre los canes y cómo detectarlas.</p>
@@ -27,7 +28,10 @@
                 </div>
                 <div class="col-md-6">
                     <br>
-                    En las fases iniciales se trata de síntomas muy sutiles. Hay razas especialmente susceptibles de padecer esta enfermedad, que son en general, las razas más pequeñas (menos de 20 kilos). Suele aparecer entre los 5 y los 8 años.
+                    <br>
+                    <br>
+                    <p>En las fases iniciales se trata de síntomas muy sutiles. Hay razas especialmente susceptibles de padecer esta enfermedad, que son en general, las razas más pequeñas (menos de 20 kilos). Suele aparecer entre los 5 y los 8 años.</p>
+                    <br>
                     <p>Cardiomiopatía Dilatada (CMD): En esta enfermedad, según cuenta Manuel Lázaro, la pared muscular del ventrículo se debilita, adelgaza y se dilata el corazón de forma progresiva, por lo que no es capaz de cumplir correctamente su función. Al estar el músculo dañado, la sangre no se bombea con normalidad por todo el cuerpo lo que puede provocar incluso una muerte súbita por taquicardia o fibrilación si no se diagnostica a tiempo. Se trata de una enfermedad que avanza muy rápido y los síntomas pueden presentarse de forma súbita cuando la enfermedad está muy avanzada. Esta enfermedad suele presentarse en perros de entre 4 y 6 años y las razas más propensas son las grandes, como el Gran danés, Doberman, Bóxer, Lobero irlandés, Labrador, Pastor Alemán, Mastín o San Bernando, entre otros. En ambos casos, el mal funcionamiento cardiaco, tenga el origen que tenga, representa un grave problema con repercusiones para la salud, la calidad de vida y el riesgo de muerte para el perro.</p>
                     <br>
                     <h3 class="text-center">¿Cómo se detectan, tratan y previenen?</h3>
