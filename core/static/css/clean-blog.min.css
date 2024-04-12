@@ -251,11 +251,22 @@ header.masthead .page-heading .subheading, header.masthead .site-heading .subhea
 }
 
 
-/* Estilos para los derechos de autor en el pie de página */
-footer .copyright {
-    font-size: 14px; /* Tamaño de fuente */
-    margin-bottom: 0; /* Margen inferior */
-    text-align: center; /* Alineación de texto */
+/* Estilos para el footer */
+footer {
+    color: #b4b4b4; /* Color del texto blanco */
+    color: #fff;
+    padding: 5px 0; /* Espaciado interno */
+}
+
+.footer-container {
+    /* background-color: #f8f9fa; */
+    font-size: 14px;
+}
+
+.footer-container p {
+    margin-bottom: 0; /* Eliminar margen inferior del párrafo */
+    background-color: #f8f9fa;
+    color: #000;
 }
 
 /* Estilos para los botones */
@@ -292,3 +303,4 @@ img {
     width: 200px; /* Ancho deseado */
     height: auto; /* Altura automática para mantener la proporción */
 }
+

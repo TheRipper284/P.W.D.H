@@ -1,12 +1,12 @@
 {% extends 'base.html'%}
-{% block title %}Prototipo movil{% endblock %}
+{% block title %}Prototipo móvil{% endblock %}
 
 {% load static %}
 
 {% block img-head %}{% static 'img/Designer(1).jpeg'%}{% endblock %}
 
 {% block title-head %}
-<h1 class="text-center">Prototipo Movil</h1>
+<h1 class="text-center">Prototipo Móvil</h1>
 {% endblock %}
 
 {% block content %}
@@ -15,7 +15,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-lg-7 col-md-8">
-            <h2 class="section-heading text-center">Prototipo Movil</h2>   
+            <h2 class="section-heading text-center">Prototipo Móvil</h2>   
             <p class="text-center">Es una aplicación móvil desarrollada con Flutter que consta con una conexión
                 a una base de datos en la nube NoSQL con los datos del cuidador del canino, 
                 la conexión a sensores para el monitoreo de pulso cardiaco, temperatura. 
@@ -25,23 +25,34 @@
             <h2 class="section-heading text-center">Interfaces de la aplicación móvil</h2>
         </div>
     </div>
+    <!-- Primera fila de imágenes -->
     <div class="row">
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-3 col-md-6">
             <img src="{% static 'img/inicio.jpg' %}" alt="" class="img-fluid">
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-3 col-md-6">
             <img src="{% static 'img/2_movil.jpg' %}" alt="" class="img-fluid">
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-3 col-md-6">
             <img src="{% static 'img/3_movil.jpg' %}" alt="" class="img-fluid">
         </div>
-        <br>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-3 col-md-6">
             <img src="{% static 'img/4_movil.jpg' %}" alt="" class="img-fluid">
         </div>
-        <br>
-        <div class="col-lg-4 col-md-6">
+    </div>
+    <!-- Segunda fila de imágenes -->
+    <div class="row mt-4">
+        <div class="col-lg-3 col-md-6">
             <img src="{% static 'img/5_movil.jpg' %}" alt="" class="img-fluid">
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <img src="{% static 'img/6_movil.jpg' %}" alt="" class="img-fluid">
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <img src="{% static 'img/7_movil.jpg' %}" alt="" class="img-fluid">
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <img src="{% static 'img/8_movil.jpg' %}" alt="" class="img-fluid">
         </div>
     </div>
 </div>
