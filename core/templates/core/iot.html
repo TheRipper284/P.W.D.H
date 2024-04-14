@@ -15,57 +15,90 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
-            <div class="row justify-content-center">
+            <!-- Título y descripción del prototipo IoT -->
+            <div class="row justify-content-center mb-5">
                 <div class="col-lg-7 col-md-8">
-                    <h2 class="section-heading">Prototipo IOT</h2>   
-                    <p>Consta de un weareable para canes el cual tiene conectado un sensor de temperatura,
-                        un sensor de pulso cardiaco del can. 
-                    </p>
+                    <h2 class="section-heading text-center">Prototipo IOT</h2>   
+                    <p class="text-center">Consta de un wearable para canes el cual tiene conectado un sensor de temperatura y un sensor de pulso cardiaco del can.</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <h2 class="section-heading2">SENSOR DE PULSO CARDIACO</h2>
-                    <img src="{% static 'img/pulsocardiaco.jpg' %}" alt="" class="img-shadow">
-                    <p>El sensor de pulso cardiaco permite realizar la medición del ritmo cardiaco
-                        de una persona utilizando microcontroladores, con únicamente tres terminales 
-                        su sistema de conexión es bastante amigable (VCC, GND y señal de pulso).
-                        Con un Voltaje de alimentación: 5V.
-                    </p>
+            
+            <!-- Carrusel de imágenes e información -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <!-- Agrega más indicadores según la cantidad de imágenes -->
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="img-container">
+                            <img src="{% static 'img/pulsocardiaco.jpg' %}" class="d-block mx-auto" alt="Sensor de Pulso Cardiaco">
+                            <div class="text-container">
+                                <h5 class="text-center">Sensor de Pulso Cardiaco</h5>
+                                <p class="text-justify">El sensor de pulso cardiaco permite realizar la medición del ritmo cardiaco de una persona utilizando microcontroladores.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="img-container">
+                            <img src="{% static 'img/temperatura.jpg' %}" class="d-block mx-auto" alt="Sensor de Temperatura">
+                            <div class="text-container">
+                                <h5 class="text-center">Sensor de Temperatura</h5>
+                                <p class="text-justify">El LM35 es adecuado para diversas aplicaciones incluidas electrodomésticos, teléfonos móviles, entre otros.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="img-container">
+                            <img src="{% static 'img/esp32.jpg' %}" class="d-block mx-auto" alt="Placa ESP32">
+                            <div class="text-container">
+                                <h5 class="text-center">Placa ESP32</h5>
+                                <p class="text-justify">La ESP32 es una serie de microcontroladores de bajo costo y alto rendimiento fabricados por Espressif Systems.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="img-container">
+                            <img src="{% static 'img/TP4056.jpg' %}" class="d-block mx-auto" alt="Modulo TP4056">
+                            <div class="text-container">
+                                <h5 class="text-center">Módulo TP4056</h5>
+                                <p class="text-justify">El módulo TP4056 es un circuito de carga de baterías de iones de litio (Li-ion) y polímero de litio (LiPo) de una sola celda. Es ampliamente utilizado en aplicaciones donde se requiere cargar de manera segura y eficiente baterías recargables de litio, como en dispositivos electrónicos portátiles, dispositivos de IoT, juguetes electrónicos, entre otros.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="img-container">
+                            <img src="{% static 'img/Bateria.jpg' %}" class="d-block mx-auto" alt="Batería de Litio">
+                            <div class="text-container">
+                                <h5 class="text-center">Batería de Litio</h5>
+                                <p class="text-justify">Una batería recargable de litio con un voltaje nominal de 3.7 V y una capacidad de 400 mAh es un tipo de batería de iones de litio diseñada para proporcionar energía portátil en una variedad de dispositivos electrónicos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="img-container">
+                            <img src="{% static 'img/.jpg' %}" class="d-block mx-auto" alt="Wearable">
+                            <div class="text-container">
+                                <h5 class="text-center">WEARABLE</h5>
+                                <p class="text-justify"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Agrega más elementos de carousel-item según la cantidad de imágenes -->
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <h2 class="section-heading2">SENSOR DE TEMPERATURA</h2> 
-                    <img src="{% static 'img/temperatura.jpg' %}" alt="" class="img-shadow">
-                    <p>El LM35 es adecuado para diversas aplicaciones incluidas electrodomésticos,
-                        teléfonos móviles, juegos, discos duros, gestión de baterías,
-                        instrumentos médicos portátiles e impresoras.
-                        Tensión de alimentación: 4 V a 30 V.
-                    </p>
-                </div> 
-                <div class="col-lg-4 col-md-6">
-                    <h2 class="section-heading2">PLACA ESP32</h2> 
-                    <img src="{% static 'img/esp32.jpg' %}" alt="" class="img-shadow">
-                    <p>La ESP32 es una serie de microcontroladores de bajo costo y alto rendimiento fabricados por Espressif Systems, una empresa con sede en China. Estos microcontroladores están diseñados específicamente para aplicaciones de Internet de las cosas (IoT), conectividad inalámbrica y proyectos embebidos en general. 
-                    </p>
-                </div> 
-                <div class="col-lg-4 col-md-6">
-                    <h2 class="section-heading2">MODULO TP4056</h2> 
-                    <img src="{% static 'img/TP4056.jpg' %}" alt="" class="img-shadow">
-                    <p>El módulo TP4056 es un circuito de carga de baterías de iones de litio (Li-ion) y polímero de litio (LiPo) de una sola celda. Es ampliamente utilizado en aplicaciones donde se requiere cargar de manera segura y eficiente baterías recargables de litio, como en dispositivos electrónicos portátiles, dispositivos de IoT, juguetes electrónicos, entre otros.
-                    </p>
-                </div> 
-                <div class="col-lg-4 col-md-6">
-                    <h2 class="section-heading2">BATERIA</h2> 
-                    <img src="{% static 'img/Bateria.jpg' %}" alt="" class="img-shadow">
-                    <p>Una batería recargable de litio con un voltaje nominal de 3.7 V y una capacidad de 400 mAh es un tipo de batería de iones de litio diseñada para proporcionar energía portátil en una variedad de dispositivos electrónicos. 
-                    </p>
-                </div> 
-                <div class="col-lg-4 col-md-12">
-                    <h2 class="section-heading2">WAREABLE</h2>
-                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </div>
-    </div>  
+    </div>
 </div>
 
 {% endblock %}

@@ -200,6 +200,100 @@ h2{
         -o-transform: translate3d(0,100%,0);
         transform: translate3d(0,100%,0);
     }
+
+    /* Estilos para el carrusel */
+
+    .carousel-item img{
+        width: 350px;
+        height: 300px;
+        margin: auto;
+    }
+
+    .carousel-caption h5 {
+        font-size: 24px; /* Tamaño de fuente */
+        font-weight: 700; /* Grosor de fuente */
+        color: #333; /* Color de texto */
+        margin-top: 20px; /* Espacio superior */
+        margin-bottom: 10px; /* Espacio inferior */
+        text-align: center; /* Alineación central */
+        font-family: Georgia, 'Times New Roman', Times, serif; /* Fuente */
+        text-transform: uppercase; /* Texto en mayúsculas */
+        letter-spacing: 1px; /* Espaciado entre letras */
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+    }
+
+    .carousel-caption p {
+        font-size: 18px; /* Tamaño del texto */
+        text-align: justify;
+    }
+
+    /* Estilo para las flechas de previous & next */
+    .carousel-control-prev,
+    .carousel-control-next {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)); /* Degradado de negro */
+        border-radius: 50%; /* Borde redondeado */
+        width: 50px; /* Ancho de las flechas */
+        height: 50px; /* Altura de las flechas */
+        top: 30%; /* Posición vertical centrada */
+        transform: translateY(-50%); /* Ajuste vertical */
+    }
+
+    /* Estilos para las flechas del carrusel en la posición previa */
+    .carousel-control-prev {
+        left: 0; /* Alinear a la izquierda */
+    }
+
+    /* Estilos para las flechas del carrusel en la posición siguiente */
+    .carousel-control-next {
+        right: 0; /* Alinear a la derecha */
+    }
+
+
+    /* Estilos para el contenedor de imagen y texto */
+    .img-container {
+        text-align: center; /* Centrar el contenido */
+        margin-bottom: 40px; /* Espaciado inferior entre cada contenedor */
+    }
+
+    /* Estilos para el contenedor de texto */
+    .text-container {
+        background-color: rgba(255, 255, 255, 0.9); /* Color de fondo con transparencia */
+        padding: 20px; /* Ajustar el padding */
+        border-radius: 10px; /* Borde redondeado */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+        text-align: justify; /* Alineación justificada */
+        max-width: 800px; /* Ancho máximo del contenedor de texto */
+        margin: 20px auto; /* Centrar horizontalmente y agregar espacio alrededor */
+    }
+
+}
+
+/* Estilos para el carrusel en dispositivos pequeños */
+@media only screen and (max-width: 767px) {
+    .carousel-item img {
+        width: 100%; /* Ancho máximo del contenedor */
+        height: auto; /* Altura automática para mantener la proporción */
+    }
+
+    .carousel-caption h5 {
+        font-size: 18px; /* Tamaño de fuente reducido */
+        margin-top: 10px; /* Espacio superior reducido */
+        margin-bottom: 5px; /* Espacio inferior reducido */
+    }
+
+    .carousel-caption p {
+        font-size: 16px; /* Tamaño del texto reducido */
+    }
+
+    /* Estilo para las flechas de previous & next en dispositivos pequeños */
+    .carousel-control-prev,
+    .carousel-control-next {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)); /* Degradado de negro */
+        width: 30px; /* Ancho reducido de las flechas */
+        height: 30px; /* Altura reducida de las flechas */
+        top: 40%; /* Posición vertical ajustada */
+        border-radius: 50%;
+    }
 }
 
 /* Estilos para el encabezado de la página */
@@ -225,7 +319,7 @@ header.masthead .overlay {
     height: 95vh; /* Igual que la altura de masthead */
     width: 100%; /* Igual que el ancho de masthead */
     opacity: 0.6; /* Opacidad del overlay */
-    background-color: rgb(89, 90, 90, 0.9); /* Color y opacidad del overlay
+    background-color: rgba(0, 0, 0, 0.9); /* Color y opacidad del overlay
     transform: translate(51%, 0%); /* Centra completamente el overlay */
 }
 
@@ -303,4 +397,3 @@ img {
     width: 200px; /* Ancho deseado */
     height: auto; /* Altura automática para mantener la proporción */
 }
-
